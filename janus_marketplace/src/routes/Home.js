@@ -1,10 +1,16 @@
 import * as React from "react";
-import { Outlet, Link } from "react-router-dom";
+import Slider from "../slider/Slider";
 
 export default function Home() {
   return (
-    <div>
-      <p>HOME</p>
-    </div>
+    <main>
+      <img src={Slider.multicolor} alt="emblem" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+      <img src="" alt="" />
+    </main>
   );
 }
