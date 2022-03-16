@@ -1,0 +1,51 @@
+{
+   "prints": [{
+        "id": 1,
+        "item_path":"../imgs/Bloodgod.jpg",
+        "item_name": "Blood God",
+        "item_price": "$14.99",
+        "item_description":""
+    },
+    {
+        "id": 2,
+        "item_path": "../imgs/desertSmoke.jpg",
+        "item_name": "Desert Smoke",
+        "item_price": "$14.99",
+        "item_description":""
+    },
+    {
+        "id": 3,
+        "item_path": "../imgs/graveSearch.jpg",
+        "item_name": "Grave Search",
+        "item_price": "$14.99",
+        "item_description":""
+    },
+    {
+        "id": 4,
+        "item_path": "../imgs/mindSludge.jpg",
+        "item_name": "Mind Sludge",
+        "item_price": "$14.99",
+        "item_description": ""
+    },
+    {
+        "id": 5,
+        "item_path": "../imgs/MPC.png",
+        "item_name": "MPC",
+        "item_price": "$14.99",
+        "item_description": ""
+    },
+    {
+        "id": 6,
+        "item_path": "../imgs/MycelialFields.jpg",
+        "item_name": "Mycelial Fields",
+        "item_price": "$14.99",
+        "item_description":""
+    },
+    {
+        "id": 7,
+        "item_path": "../imgs/omenFortress.jpg",
+        "item_name": "Omen Fortress",
+        "item_price": "$14.99",
+        "item_description": ""
+    }]
+}

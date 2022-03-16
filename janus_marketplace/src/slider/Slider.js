@@ -1,5 +1,5 @@
-const Slider = {
-    multicolor: document.require('./multicolor.png').default
-}
+// const Slider = {
+//     multicolor: require('./multicolor.png').default
+// }
 
-export default Slider;
+// export default Slider;
