@@ -12,8 +12,9 @@ export default function Marketplace() {
   let [searchParams, setSearchParams] = useSearchParams();
   return (
     <div>
-      <input
+      <input className="search"
         type="text"
+        placeholder= "Looking for something?"
         value={searchParams.get("filter") || ""}
         onChange={(event) => {
           let filter = event.target.value;
@@ -41,7 +42,7 @@ export default function Marketplace() {
                   <h2 className="listprice">List Price:{work.item_price}</h2>
                   {work.item_description}
                 </article>
-                <button class="add">Add to cart</button>
+                <button className="add">Add to cart</button>
               </div>
             </section>
           );

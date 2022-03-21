@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import "../App.scss";
 export default function Nav() {
   return (
-    <div>
+    <div className="header">
       <h1 className="title">Janus's Marketplace</h1>
       <nav>
         <Link className="link" to="/Home">Home</Link>

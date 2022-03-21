@@ -10,16 +10,18 @@ import violet from "../slider/violet.png";
 
 export default function Home() {
   return (
-    <main className="slider">
-      <img className="slider-img1" src={multicolor} alt="emblem" />
-      <img className="slider-img2" src={red} alt="" />
-      <img className="slider-img3" src={yellow} alt="" />
-      <img className="slider-img4" src={green} alt="" />
-      <img className="slider-img5" src={liteblue} alt="" />
-      <img className="slider-img6" src={blue} alt="" />
-      <img className="slider-img7" src={violet} alt="" />
-      <img className="slider-img8" src={multicolor} alt="" />
+    <div>
+      <main className="slider">
+        <img className="slider-img1" src={multicolor} alt="emblem" />
+        <img className="slider-img2" src={red} alt="" />
+        <img className="slider-img3" src={yellow} alt="" />
+        <img className="slider-img4" src={green} alt="" />
+        <img className="slider-img5" src={liteblue} alt="" />
+        <img className="slider-img6" src={blue} alt="" />
+        <img className="slider-img7" src={violet} alt="" />
+        <img className="slider-img8" src={multicolor} alt="" />
+      </main>
       <Footer></Footer>
-    </main>
+    </div>
   );
 }
