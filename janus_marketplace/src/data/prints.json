@@ -1,51 +1,52 @@
 {
    "prints": [{
         "id": 1,
-        "item_path":"../imgs/Bloodgod.jpg",
+        "item_path": "assets/Bloodgod.jpg",
         "item_name": "Blood God",
         "item_price": "$14.99",
-        "item_description":""
+        "item_description":"I really enjoy Warhammer 40k lore, and the chaos gods are an interesting force in the universe. Khorne, his symbol is depicted on the skull, is the chaos god of slaughter, rage, and war. He is commonly depicted as a large behemoth that carries a giant sword and sits atop a throne of skulls, and his followers revel in their carnage while shouting 'BLOOD FOR THE BLOOD GOD! SKULLS FOR THE SKULL THRONE!'."
     },
     {
         "id": 2,
-        "item_path": "../imgs/desertSmoke.jpg",
+        "item_path": "assets/desertSmoke.jpg",
         "item_name": "Desert Smoke",
         "item_price": "$14.99",
-        "item_description":""
+        "item_description":"I like history a lot, and the image of two historically opposed groups, Frontier Settlers and Indigenous Tribes, sitting around and having a smoke by the fire in the hostile desert environment at night is just a funny picture to me. From that thought, this was born."
     },
     {
         "id": 3,
-        "item_path": "../imgs/graveSearch.jpg",
+        "item_path": "assets/graveSearch.jpg",
         "item_name": "Grave Search",
         "item_price": "$14.99",
-        "item_description":""
+        "item_description":"I'm a huge fan of of video game series, Dark Souls. The knight in this image is a direct reference to the knight armor set in Dark Souls 3. I had a lot of fun drawing this, and I hope it makes your wall look a little cooler."
     },
     {
         "id": 4,
-        "item_path": "../imgs/mindSludge.jpg",
+        "item_path": "assets/mindSludge.jpg",
         "item_name": "Mind Sludge",
         "item_price": "$14.99",
-        "item_description": ""
+        "item_description": "While I'm not the biggest fan of Fullmetal Alchemist: Brotherhood(I like the original far more), the concept of Pride, the homunculus, was still pretty cool. Even without the ability to eviscerate you, having this presence that just jeers and jabs at you psychologically that haunts your shadow is pretty scary."
     },
     {
         "id": 5,
-        "item_path": "../imgs/MPC.png",
+        "item_path": "assets/MPC.png",
         "item_name": "MPC",
         "item_price": "$14.99",
-        "item_description": ""
+        "item_description": "Originally a piece for my younger brother, he is a big fan of Afro Samurai. I think the subject matter present here is self explanitory."
     },
     {
         "id": 6,
-        "item_path": "../imgs/MycelialFields.jpg",
+        "item_path": "assets/MycelialFields.jpg",
         "item_name": "Mycelial Fields",
         "item_price": "$14.99",
-        "item_description":""
+        "item_description":"This piece is an older one that I drew back in 2019...and I'm not entirely sure where this inspiration came from. I was in a weird place in life, in my early 20's, and this is an equally odd piece of work from that period."
     },
     {
         "id": 7,
-        "item_path": "../imgs/omenFortress.jpg",
+        "item_path": "assets/omenFortress.jpg",
         "item_name": "Omen Fortress",
         "item_price": "$14.99",
-        "item_description": ""
-    }]
+        "item_description": "This piece is from 2019, and heavily inspired by the album cover art for 'None Shall Pass' by Aesop Rock. It was a hard time for me during those years, and it was nice to have some emotional validation through the songs on that album. Those emotions I dealt with manifested, and took the form of this piece."
+    }
+]
 }

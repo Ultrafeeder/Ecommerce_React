@@ -1,0 +1,24 @@
+.f-contact {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 1em auto 1em;
+  background-color: Teal;
+}
+
+.f-contact input {
+  margin: 0.2em;
+}
+
+.f-contact #submit {
+  color: black;
+  width: 20%;
+  text-align: center;
+  margin: 0.1em auto 0.1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .f-contact {
+    width: 80vw;
+  }
+}

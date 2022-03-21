@@ -1,0 +1,61 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  width: 100vw;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 5em;
+  background-image: linear-gradient(to right, slateblue, slategrey);
+  text-shadow: 0.2em 0.2em black;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  margin: auto;
+  justify-content: space-between;
+}
+
+nav a {
+  background-color: slategrey;
+  font-size: 2em;
+  padding: 0.1em;
+  margin: auto;
+  border-radius: 0.2em;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto 1em;
+    background-image: linear-gradient(to right, slateblue, slategrey);
+    text-shadow: 0.2em 0.2em black;
+  }
+
+  nav {
+    display: flex;
+    width: 100vw;
+  }
+
+  nav a {
+    flex-basis: 30%;
+    text-align: center;
+    background-color: slategrey;
+    font-size: 1.3em;
+    padding: 0.1em;
+    margin: auto;
+    border-radius: 0.2em;
+  }
+}

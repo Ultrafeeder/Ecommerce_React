@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
-import { Outlet, Link } from "react-router-dom";
 import Nav from "./component/Nav";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
-    <main>
+    <div>
       <Nav></Nav>
-    </main>
+    </div>
   );
 }
 

@@ -1,12 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import Home from "./routes/Home";
 import Marketplace from "./routes/Marketplace";
 import Form from "./routes/Form";
+import Commisions from "./routes/Commission";
 import reportWebVitals from "./reportWebVitals";
 
 const rootElement = document.getElementById("root");
@@ -14,8 +15,10 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
+        <Route index element={<Home />}></Route>
         <Route path="Home" element={<Home />}></Route>
         <Route path="Marketplace" element={<Marketplace />}></Route>
+        <Route path="Commission" element={<Commisions />}></Route>
         <Route path="Form" element={<Form />}></Route>
       </Route>
     </Routes>

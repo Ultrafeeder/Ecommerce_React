@@ -1,0 +1,131 @@
+.sec-list {
+  display: grid;
+  grid-template-areas:
+    "a a"
+    "b c";
+  margin: 2rem;
+}
+
+.sec-list .item {
+  grid-area: a;
+}
+
+.sec-list img {
+  width: 30vw;
+  grid-area: b;
+  box-shadow: 0.2em 0.2em slategrey;
+}
+
+.sec-list .card {
+  grid-area: c;
+  width: 50vw;
+  background-color: teal;
+  padding: 0.3em;
+  box-shadow: 0.3em 0.3em slategrey;
+  border-radius: 0.3em;
+}
+
+.sec-list .item,
+.listprice {
+  text-align: center;
+  background-color: rgb(31, 51, 51);
+  border-radius: 0.3em;
+}
+
+.sec-list .desc {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 1rem auto 1rem;
+}
+
+.card a {
+  display: block;
+  margin: 0.2em auto 0.2em;
+  padding: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  background-color: black;
+  border-radius: 0.2em;
+}
+
+.card a:hover {
+  background-color: slategrey;
+  border-style: solid;
+}
+
+.card a:active {
+  background-color: red;
+  border-style: solid;
+}
+
+@media only screen and (max-width: 768px) {
+  .sec-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100vw;
+    height: auto;
+    justify-items: center;
+    margin: 3em auto 3em;
+  }
+
+  .sec .item {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .sec-list img {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0.2em auto 0.2em;
+    width: 75vw;
+  }
+
+  .sec-list .card {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 75vw;
+    font-size: 10pt;
+    background-color: teal;
+    padding: 0.3em;
+    box-shadow: 0.3em 0.3em slategrey;
+    border-radius: 0.3em;
+  }
+
+  .card .item {
+    text-align: center;
+    background-color: rgb(31, 51, 51);
+    border-radius: 0.3em;
+  }
+
+  .listprice {
+    text-align: center;
+    background-color: rgb(31, 51, 51);
+    border-radius: 0.3em;
+  }
+}
+
+/*CONTACT PAGE*/
+
+.f-contact {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 1em auto 1em;
+  background-color: Teal;
+}
+
+.f-contact input {
+  margin: 0.2em;
+}
+
+.f-contact #submit {
+  color: black;
+  width: 20%;
+  text-align: center;
+  margin: 0.1em auto 0.1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .f-contact {
+    width: 80vw;
+  }
+}
