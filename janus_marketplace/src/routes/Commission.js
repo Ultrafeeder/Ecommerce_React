@@ -1,15 +1,34 @@
 import * as React from "react";
 import Footer from "../component/Footer";
+import axios from "axios";
 import { useSearchParams } from "react-router-dom";
-const commissions = require("../data/commissions.json");
-let commission = commissions.commissions;
 
 export default function Commisions() {
+  let [commission, getCommission] = React.useState(null);
   let [searchParams, setSearchParams] = useSearchParams();
+  React.useEffect(
+    () =>
+      axios
+        .get("http://localhost:4000/commissions")
+        .then((response) => {
+          getCommission(response.data);
+        })
+        .catch((err) => console.log(err)),
+    []
+  );
+
+  if (!commission)
+    return (
+      <div>
+        <h1>There seems to have been an error...</h1>
+        <Footer></Footer>
+      </div>
+    );
 
   return (
     <div>
       <input
+        className="search"
         type="text"
         value={searchParams.get("filter") || ""}
         onChange={(event) => {
@@ -31,17 +50,21 @@ export default function Commisions() {
         .map((comm) => {
           return (
             <section className="sec-list" key={comm.id}>
-            <h2 className="item">{comm.service_name}</h2>
-            <img src={comm.img_path} alt="art" />
-            <div className="card">
-              <article className="desc">
-                <h2 className="listprice">All commissions are custom orders and are priced according to request.</h2>
-                {comm.service_desc}
-              </article>
-              <button class="add">Add to cart</button>
-            </div>
-          </section>
-        )})}
+              <h2 className="item">{comm.service_name}</h2>
+              <img src={comm.img_path} alt="art" />
+              <div className="card">
+                <article className="desc">
+                  <h2 className="listprice">
+                    All commissions are custom orders and are priced according
+                    to request.
+                  </h2>
+                  {comm.service_desc}
+                </article>
+                <button class="add">Add to cart</button>
+              </div>
+            </section>
+          );
+        })}
       <Footer></Footer>
     </div>
   );

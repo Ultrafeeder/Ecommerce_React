@@ -1,28 +1,27 @@
 {
     "commissions":[{
         "id": 1,
+        "img_path": "assets/Bareth.jpeg",
+        "service_name": "Character Commission",
+        "service_desc":"I have illustrated a lot of my dungeons and dragons characters from various campaigns, and understand the fun feeling of looking at a physical representation of the character you're roleplaying as. This applies to other roleplaying activities as well, and if you have a persona that you wish to bring to life, hit the button bellow!"
+    },{  "id": 2,
         "img_path": "assets/ykwtf.png",
         "service_name": "Logo Design",
         "service_desc":"I'm also a graphic designer, and have done logos for businesses ranging from store fronts to music artists. If you're looking to promote something of yours, click the button below to send a message! I'll be glad to work something out for you."
     },{
-        "id": 2,
+        "id": 3,
         "img_path": "assets/HeresyPaintingStudios.png",
         "service_name": "Business card Design",
         "service_desc":"All businesses need some kind of business card to remind people who you are. I designed my own and I can design yours to print! Hit the button below to get started!"
     },{
-        "id": 3,
+        "id": 4,
         "img_path": "assets/HALLOSTEP.jpeg",
         "service_name": "Ep/Album Cover Design",
         "service_desc":"That limited run of vinyls wont' sell themselves, and a blank album cover will get skipped on spotify. If you need some killer album art, hit the button below."
     },{
-        "id": 4,
+        "id": 5,
         "img_path": "assets/graveSearch.jpg",
         "service_name": "Prints",
         "service_desc":"If you want something to fill a space on you wall, and don't want to support the corporate mass production of royalty free dollar stor art, or an idea that you can't quite put to pen and paper, then hit the button below!"
-    },{
-        "id": 5,
-        "img_path": "",
-        "service_name": "Character Commission",
-        "service_desc":"I have illustrated a lot of my dungeons and dragons characters from various campaigns, and understand the fun feeling of looking at a physical representation of the character you're roleplaying as. This applies to other roleplaying activities as well, and if you have a persona that you wish to bring to life, hit the button bellow!"
     }]
 }
