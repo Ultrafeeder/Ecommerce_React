@@ -10,28 +10,38 @@ const db = mysql.createConnection({
     database: 'Janus'
 });
 
-// db.connect(err => {
-//     if (err) {
-//         console.log(err)
-//     } else if (!err) {
-//         console.log('We did it!')
-//     }
+
+db.connect(err => {
+    if (err) {
+        console.log(err)
+    } else if (!err) {
+        console.log('We did it!')
+    }
     
-// })
+})
 
 app.use(cors());
-app.use(express.json);
+app.use(express.json());
 
 app.get('/', (req, res) => {
+    res.send('hello')
     console.log('hello world');
 })
 
 app.get('/prints', (req, res) => {
     let reqItem = 'SELECT * FROM prints';
-    let query = db.query(reqItem, (err, result) => {
+    db.query(reqItem, (err, result) => {
         if (err) throw err;
-        console.log(result);
-        res.send('we got it');
+        res.send(result)
+        // res.send('we got it');
+    })
+})
+app.get('/commissions', (req, res) => {
+    let reqItem = 'SELECT * FROM commissions';
+    db.query(reqItem, (err, result) => {
+        if (err) throw err;
+       res.send(result)
+        // res.send('we got it');
     })
 })
 
