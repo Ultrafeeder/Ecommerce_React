@@ -12,6 +12,7 @@ export default function Footer() {
       </span>
       <div>
         <SocialMediaIconsReact
+          className="icon"
           borderColor="rgba(0,0,0,0.25)"
           borderWidth="5"
           borderStyle="solid"
@@ -21,9 +22,10 @@ export default function Footer() {
           iconSize="5"
           roundness="50%"
           url="https://some-website.com/my-social-media-url"
-          size="50"
+          size="30"
         />
         <SocialMediaIconsReact
+          className="icon"
           borderColor="rgba(0,0,0,0.25)"
           borderWidth="5"
           borderStyle="solid"
@@ -33,9 +35,10 @@ export default function Footer() {
           iconSize="5"
           roundness="50%"
           url="https://some-website.com/my-social-media-url"
-          size="50"
+          size="30"
         />
         <SocialMediaIconsReact
+          className="icon"
           borderColor="rgba(0,0,0,0.25)"
           borderWidth="5"
           borderStyle="solid"
@@ -45,7 +48,7 @@ export default function Footer() {
           iconSize="5"
           roundness="50%"
           url="https://some-website.com/my-social-media-url"
-          size="50"
+          size="30"
         />
       </div>
       <span className="foot-details">Copyright @2022</span>

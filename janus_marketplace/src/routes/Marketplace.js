@@ -46,13 +46,12 @@ export default function Marketplace() {
           let filter = searchParams.get("filter");
           if (!filter) return true;
           let name = work.item_name.toLowerCase();
-          let price = work.item_price;
-          if (typeof filter == "string") {
-            return name.startsWith(filter.toLowerCase());
-          }
-          if (typeof parseInt(filter) == "number") {
-            return price(filter);
-          }
+          // let price = work.item_price;
+          return name.startsWith(filter.toLowerCase());
+
+          // if (typeof filter == "number") {
+          //   // return price(filter);
+          // }
         })
         .map((work) => (
           <section className="sec-list" key={work.id}>
