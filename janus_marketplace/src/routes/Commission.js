@@ -1,5 +1,4 @@
 import * as React from "react";
-import Footer from "../component/Footer";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
 
@@ -21,7 +20,6 @@ export default function Commisions() {
     return (
       <div>
         <h1>There seems to have been an error...</h1>
-        <Footer></Footer>
       </div>
     );
 
@@ -65,7 +63,6 @@ export default function Commisions() {
             </section>
           );
         })}
-      <Footer></Footer>
     </div>
   );
 }

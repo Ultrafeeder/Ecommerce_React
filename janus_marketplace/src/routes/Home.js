@@ -1,5 +1,4 @@
 import * as React from "react";
-import Footer from "../component/Footer";
 import multicolor from "../slider/multicolor.png";
 import red from "../slider/red.png";
 import yellow from "../slider/yellow.png";
@@ -21,7 +20,6 @@ export default function Home() {
         <img className="slider-img7" src={violet} alt="" />
         <img className="slider-img8" src={multicolor} alt="" />
       </main>
-      <Footer></Footer>
     </div>
   );
 }

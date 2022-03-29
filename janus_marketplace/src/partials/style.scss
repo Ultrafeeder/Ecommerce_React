@@ -6,62 +6,100 @@
 
 .header {
   width: 100vw;
+  padding-top: 0;
+  margin-top: 0;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  flex-grow: 1;
 }
 
-.title {
-  text-align: center;
-  font-size: 5em;
-  background-image: linear-gradient(to right, slateblue, slategrey);
-  text-shadow: 0.2em 0.2em black;
+.header-img {
+  height: 5em;
+}
+
+.flex-wrapper .title {
+  font-size: 3em;
+  margin: 0.3em;
+  color: adjust-hue($color: #000000, $degrees: 0);
+  font-family: "Linden Hill", serif;
 }
 
 nav {
   display: flex;
-  width: 100vw;
-  margin: auto;
-  justify-content: space-between;
+  flex-grow: 3;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  margin-right: 2vw;
 }
 
 nav .link {
-  background-color: slategrey;
-  font-size: 2em;
-  padding: 0.1em;
-  margin: auto;
-  border-radius: 0.2em;
+  color: black;
+  font-size: 1.3em;
+  padding: 0.3em;
+  margin: auto 0.2em auto 0.2em;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0.4em;
   text-decoration: none;
+  transition: all 230ms ease-in-out;
+
+  &:hover {
+    color: rgb(102, 178, 233);
+    border-color: rgb(102, 178, 233);
+    border-radius: 0.4em;
+  }
+}
+
+.burger-menu {
+  display: none;
 }
 
 body {
   background-color: black;
 }
 
-@media only screen and (max-width: 768px) {
-  .header .title {
-    font-size: 3em;
-    display: block;
-    text-align: center;
-    width: 100vw;
-    margin: 0 auto 1em;
-    background-image: linear-gradient(to right, slateblue, slategrey);
-    text-shadow: 0.2em 0.2em black;
-  }
-
-  nav {
-    display: flex;
-    width: 100vw;
-  }
-
-  nav .link {
-    flex-basis: 30%;
-    text-align: center;
-    background-color: slategrey;
-    font-size: 1.3em;
-    padding: 0.1em;
-    margin: auto;
-    border-radius: 0.2em;
+@media only screen and(max-width:900px ) {
+  .flex-wrapper {
+    flex-wrap: wrap;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .flex-wrapper .title {
+    font-size: 2em;
+    margin: 0.3em;
+    color: adjust-hue($color: #000000, $degrees: 0);
+    font-family: "Linden Hill", serif;
+  }
+
+  .burger-menu {
+    display: block;
+    height: 3em;
+  }
+  nav {
+    justify-content: space-between;
+    margin: auto;
+  }
+  nav .link {
+    &:click {
+      color: rgb(102, 178, 233);
+      border-color: rgb(102, 178, 233);
+      border-radius: 0.4em;
+    }
+  }
+}
+
+@media only scree and(max-width: 460px) {
+  nav .link {
+    font-size: 0.5em;
+    margin: 0;
+  }
+}
 /*SLIDER*/
 .slider {
   display: grid;
@@ -559,9 +597,27 @@ body {
   flex-direction: column;
   width: 40vw;
   margin: 1em auto 1em;
-  background-color: Teal;
+  background-color: white;
+}
+.name-form-wrapper {
+  display: flex;
+}
+.phone-form-wrapper {
+  text-align: center;
+}
+.email-form-wrapper {
+  text-align: center;
 }
 
+#fname {
+  flex-basis: 45%;
+}
+#lname {
+  flex-basis: 45%;
+}
+.f-contact label {
+  color: black;
+}
 .f-contact input {
   margin: 0.2em;
 }
@@ -577,24 +633,36 @@ body {
   .f-contact {
     width: 80vw;
   }
+  .f-contact label {
+    display: none;
+  }
 }
 
 /*FOOTER*/
 .footer {
-  background-image: url("../../public/assets/ink_stain2.jpeg");
+  background-color: white;
   background-size: cover;
 }
-.footer .foot-details {
+.footer .foot-title {
+  font-size: 1rem;
   color: black;
+  text-align: center;
+}
+.footer .foot-details {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+.footer span {
+  display: flex;
+  background-color: slategray;
+}
+.footer div {
+  display: flex;
+  justify-content: center;
 }
 .footer .icon {
-  height: 10px;
-  width: 10px;
-}
-.footer h1 {
-  text-align: center;
-  font-size: 5em;
-  text-shadow: 0.2em 0.2em black;
+  margin: 1.2rem auto 1.2rem auto;
 }
 
 @media only screen and (max-width: 768px) {

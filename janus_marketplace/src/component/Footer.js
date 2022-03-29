@@ -3,13 +3,13 @@ import { SocialMediaIconsReact } from "social-media-icons-react";
 export default function Footer() {
   return (
     <section className="footer">
-      <h4 className="foot-details">Janus's Marketplace</h4>
-      <span className="foot-details">
+      <h4 className="foot-title">Janus's Marketplace</h4>
+      <p className="foot-details">
         All depictions, references, and likenesses in artwork
         featured/commissioned on/from this website claim no ownership or
         affiliation with existing intellectual properties and are transformative
         in nature, thus constituting fair-use under federal copyright law.
-      </span>
+      </p>
       <div>
         <SocialMediaIconsReact
           className="icon"

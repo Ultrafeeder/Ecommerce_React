@@ -9,6 +9,7 @@ import Marketplace from "./routes/Marketplace";
 import Form from "./routes/Form";
 import Commisions from "./routes/Commission";
 import reportWebVitals from "./reportWebVitals";
+import Footer from "./component/Footer";
 
 const rootElement = document.getElementById("root");
 render(
@@ -22,6 +23,7 @@ render(
         <Route path="Form" element={<Form />}></Route>
       </Route>
     </Routes>
+    <Footer></Footer>
   </BrowserRouter>,
   rootElement
 );

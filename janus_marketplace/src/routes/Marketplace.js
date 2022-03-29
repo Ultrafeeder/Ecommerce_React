@@ -21,7 +21,6 @@ export default function Marketplace() {
     return (
       <div>
         <h1>There seems to have been an error...</h1>
-        <Footer></Footer>
       </div>
     );
 
@@ -67,7 +66,6 @@ export default function Marketplace() {
             </div>{" "}
           </section>
         ))}
-      <Footer></Footer>
     </div>
   );
 }

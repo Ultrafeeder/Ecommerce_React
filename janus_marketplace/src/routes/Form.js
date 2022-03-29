@@ -1,5 +1,4 @@
 import * as React from "react";
-import Footer from "../component/Footer";
 // const form = document.getElementById("form");
 // const fName = document.getElementById("fname");
 // const lName = document.getElementById("lname");
@@ -16,51 +15,55 @@ export default function Form() {
     <div>
       <div className="error"></div>
       <form action="get" id="form" className="f-contact">
-        <label htmlFor="fname">First Name:</label>
-        <input
-          type="text"
-          id="fname"
-          className="inp-fill"
-          placeholder="John"
-          required
-        ></input>
-        <label htmlFor="lname">Last Name:</label>
-        <input
-          type="text"
-          id="lname"
-          className="inp-fill"
-          placeholder="Doe"
-          required
-        ></input>
-        <label htmlFor="phone">Phone No.:</label>
-        <input
-          type="text"
-          id="phone"
-          className="inp-fill"
-          placeholder="##########"
-          required
-        ></input>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="text"
-          id="email"
-          className="inp-fill"
-          placeholder="email@company.com"
-          required
-        ></input>
+        <div className="name-form-wrapper">
+          <label htmlFor="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            className="inp-fill"
+            placeholder="John"
+            required
+          ></input>
+          <label htmlFor="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            className="inp-fill"
+            placeholder="Doe"
+            required
+          ></input>
+        </div>{" "}
+        <div className="phone-form-wrapper">
+          <label htmlFor="phone">Phone No.:</label>
+          <input
+            type="text"
+            id="phone"
+            className="inp-fill"
+            placeholder="##########"
+            required
+          ></input>
+        </div>
+        <div className="email-form-wrapper">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            className="inp-fill"
+            placeholder="email@company.com"
+            required
+          ></input>
+        </div>
         <label htmlFor="message">Your inquiry:</label>
         <textarea
           name="message"
           id="message"
           cols="30"
           rows="10"
-          placeholder="type here"
+          placeholder="type your inquiry here"
         ></textarea>
         <input type="submit" id="submit" value="submit"></input>
       </form>
-      <div>
-        <Footer></Footer>
-      </div>
+      <div></div>
     </div>
   );
 }
