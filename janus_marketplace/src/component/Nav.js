@@ -2,7 +2,7 @@ import * as React from "react";
 import { Outlet, Link } from "react-router-dom";
 import "../App.scss";
 import multicolor from "../slider/multicolor.png";
-import resIcon from "../imgs/menu_icon.png";
+
 
 export default function Nav() {
   return (
