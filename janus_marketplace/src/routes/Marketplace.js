@@ -28,7 +28,7 @@ export default function Marketplace() {
       <input
         className="search"
         type="text"
-        placeholder="Looking for something?"
+        placeholder="Enter a name of a piece you're looking for."
         value={searchParams.get("filter") || ""}
         onChange={(event) => {
           let filter = event.target.value;
