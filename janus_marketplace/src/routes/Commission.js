@@ -28,6 +28,7 @@ export default function Commisions() {
       <input
         className="search"
         type="text"
+        placeholder="Enter a name of a piece you're looking for."
         value={searchParams.get("filter") || ""}
         onChange={(event) => {
           let filter = event.target.value;
