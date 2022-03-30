@@ -1,27 +1,28 @@
 import * as React from "react";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
+import commission from "../data/commissions.json"
 
 export default function Commisions() {
-  let [commission, getCommission] = React.useState(null);
+  // let [commission, getCommission] = React.useState(null);
   let [searchParams, setSearchParams] = useSearchParams();
-  React.useEffect(
-    () =>
-      axios
-        .get("http://localhost:4000/commissions")
-        .then((response) => {
-          getCommission(response.data);
-        })
-        .catch((err) => console.log(err)),
-    []
-  );
+  // React.useEffect(
+  //   () =>
+  //     axios
+  //       .get("http://localhost:4000/commissions")
+  //       .then((response) => {
+  //         getCommission(response.data);
+  //       })
+  //       .catch((err) => console.log(err)),
+  //   []
+  // );
 
-  if (!commission)
-    return (
-      <div>
-        <h1>There seems to have been an error...</h1>
-      </div>
-    );
+  // if (!commission)
+  //   return (
+  //     <div>
+  //       <h1>There seems to have been an error...</h1>
+  //     </div>
+  //   );
 
   return (
     <div>
@@ -39,7 +40,7 @@ export default function Commisions() {
           }
         }}
       />
-      {commission
+      {commission.commissions
         .filter((comm) => {
           let filter = searchParams.get("filter");
           if (!filter) return true;

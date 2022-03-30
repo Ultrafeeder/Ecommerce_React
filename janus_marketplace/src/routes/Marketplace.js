@@ -1,27 +1,30 @@
 import React from "react";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
+import print from "../data/prints.json";
+
+
 
 export default function Marketplace() {
-  const [print, getPrint] = React.useState(null);
+  // const [print, getPrint] = React.useState(null);
   const [searchParams, setSearchParams] = useSearchParams();
-  React.useEffect(
-    () =>
-      axios
-        .get("http://localhost:4000/prints")
-        .then((response) => {
-          getPrint(response.data);
-        })
-        .catch((err) => console.log(err)),
-    []
-  );
+  // React.useEffect(
+  //   () =>
+  //     axios
+  //       .get("http://localhost:4000/prints")
+  //       .then((response) => {
+  //         getPrint(response.data);
+  //       })
+  //       .catch((err) => console.log(err)),
+  //   []
+  // );
 
-  if (!print)
-    return (
-      <div>
-        <h1>There seems to have been an error...</h1>
-      </div>
-    );
+  // if (!print)
+  //   return (
+  //     <div>
+  //       <h1>There seems to have been an error...</h1>
+  //     </div>
+  //   );
 
   return (
     <div>
@@ -39,7 +42,7 @@ export default function Marketplace() {
           }
         }}
       />
-      {print
+      {print.prints
         .filter((work) => {
           let filter = searchParams.get("filter");
           if (!filter) return true;
