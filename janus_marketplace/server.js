@@ -4,10 +4,10 @@ const mysql = require('mysql');
 const app = express();
 
 const db = mysql.createConnection({
-    host: 'database-1.cluster-ch3mflwsxarx.us-east-2.rds.amazonaws.com',
-    user: 'admin',
-    password: 'IcfCIPnGR1DvwzAXjgCy',
-    database: 'database-1'
+    host: 'localhost',
+    user: 'root',
+    password: 'hLWF5EBGdQp4NS',
+    database: 'Janus'
 });
 
 
