@@ -21,13 +21,13 @@ export default function Form() {
             type="text"
             id="fname"
             className="inp-fill"
-            placeholder="John"
+            placeholder="first name"
             required
           ></input>
           <label htmlFor="lname">Last Name:</label>
           <input
             type="text"
-            id="lname"
+            id="last name"
             className="inp-fill"
             placeholder="Doe"
             required
@@ -39,7 +39,7 @@ export default function Form() {
             type="text"
             id="phone"
             className="inp-fill"
-            placeholder="##########"
+            placeholder="phone ex:##########"
             required
           ></input>
         </div>
@@ -49,7 +49,7 @@ export default function Form() {
             type="text"
             id="email"
             className="inp-fill"
-            placeholder="email@company.com"
+            placeholder="email ex:email@company.com"
             required
           ></input>
         </div>

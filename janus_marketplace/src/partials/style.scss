@@ -31,7 +31,7 @@
 nav {
   display: flex;
   flex-grow: 3;
-  flex-direction: row;
+  // flex-direction: row;
   align-items: center;
   justify-content: right;
   margin-right: 2vw;
@@ -55,10 +55,6 @@ nav .link {
   }
 }
 
-.burger-menu {
-  display: none;
-}
-
 body {
   background-color: black;
 }
@@ -77,14 +73,10 @@ body {
     font-family: "Linden Hill", serif;
   }
 
-  .burger-menu {
-    display: block;
-    height: 3em;
-  }
   nav {
-    justify-content: space-between;
-    margin: auto;
+    flex-direction: column;
   }
+
   nav .link {
     &:click {
       color: rgb(102, 178, 233);
