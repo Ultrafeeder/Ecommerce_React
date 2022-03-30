@@ -27,9 +27,9 @@ export default function Form() {
           <label htmlFor="lname">Last Name:</label>
           <input
             type="text"
-            id="last name"
+            id="lname"
             className="inp-fill"
-            placeholder="Doe"
+            placeholder="last name"
             required
           ></input>
         </div>{" "}
