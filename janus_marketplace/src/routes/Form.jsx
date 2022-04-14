@@ -16,7 +16,7 @@ export default function Form() {
       <div className="error"></div>
       <form action="get" id="form" className="f-contact">
         <div className="name-form-wrapper">
-          <label htmlFor="fname">First Name:</label>
+          <label htmlFor="fname">Name:</label>
           <input
             type="text"
             id="fname"
@@ -24,10 +24,9 @@ export default function Form() {
             placeholder="first name"
             required
           ></input>
-          <label htmlFor="lname">Last Name:</label>
           <input
             type="text"
-            id="last name"
+            id="lname"
             className="inp-fill"
             placeholder="Doe"
             required
