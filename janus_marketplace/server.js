@@ -1,12 +1,22 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql');
+const bodyparser = require('body-parser')
 const app = express();
+require("dotenv").config()
+
+const SQL_PORT = process.env.SQL_PORT;
+const SQL_PASSWORD = process.env.SQL_PASSWORD;
+
+app.use(cors());
+app.use(express.json());
+app.use(bodyparser.urlencoded({ extended: true }))
 
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'hLWF5EBGdQp4NS',
+    host: 'janus-ecommerce.cla8t54tzdnx.us-east-1.rds.amazonaws.com',
+    port: 3306,
+    user: 'admin',
+    password: SQL_PASSWORD,
     database: 'Janus'
 });
 
@@ -20,8 +30,7 @@ db.connect(err => {
     
 })
 
-app.use(cors());
-app.use(express.json());
+
 
 app.get('/', (req, res) => {
     res.send('hello')
@@ -32,7 +41,7 @@ app.get('/prints', (req, res) => {
     let reqItem = 'SELECT * FROM prints';
     db.query(reqItem, (err, result) => {
         if (err) throw err;
-        res.send(result)
+        res.status(200).json(result)
         // res.send('we got it');
     })
 })
@@ -45,6 +54,6 @@ app.get('/commissions', (req, res) => {
     })
 })
 
-app.listen(4000, () => {
-    console.log('running on 4000');
+app.listen(SQL_PORT, () => {
+    console.log(`listening on ${SQL_PORT}`);
 })
