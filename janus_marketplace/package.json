@@ -23,8 +23,8 @@
   },
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start ",
+    "build": "react-scripts build && nodemon server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
