@@ -8,9 +8,10 @@ export default function Marketplace() {
   React.useEffect(
     () =>
       axios
-        .get("http://www.janusmarketplace.com:4000/prints")
+        .get("http://localhost:4000/prints")
         .then((response) => {
           getPrint(response.data);
+          console.log(response.data);
         })
         .catch((err) => console.log(err)),
     []
